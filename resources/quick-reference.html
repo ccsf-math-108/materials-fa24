@@ -182,6 +182,12 @@ table > tbody > tr:nth-child(odd) {
                         <td><strong>Table</strong>: a copy of the original table with only the rows at the given indices</td>
                     </tr>
                     <tr>
+                        <td><code class="language-plaintext highlighter-rouge">tbl.exclude(row_indices)</code></td>
+                        <td>A table without the rows at the given indices. <code class="language-plaintext highlighter-rouge">row_indices</code> is either an array of indices or an integer corresponding to one index.</td>
+                        <td><strong>array</strong> of ints: the indices of the rows to be excluded from the Table OR <strong>int</strong>: the index of the row to be excluded</td>
+                        <td><strong>Table</strong>: a copy of the original table without the rows at the given indices</td>
+                    </tr>
+                    <tr>
                         <td><code class="language-plaintext highlighter-rouge">tbl.scatter(x_column, y_column)</code></td>
                         <td>Draws a scatter plot consisting of one point for each row of the table. Note that <code class="language-plaintext highlighter-rouge">x_column</code> and <code class="language-plaintext highlighter-rouge">y_column</code> must be strings specifying column names. Include optional argument <code class="language-plaintext highlighter-rouge">fit_line=True</code> if you want to draw a line of best fit for each set of points. (<a href="https://www.inferentialthinking.com/chapters/07/Visualization.html">Ch 7</a>)</td>
                         <td>1. <strong>string</strong>: name of the column on the x-axis <br> 2. <strong>string</strong>: name of the column on the y-axis <br> 3. (Optional) <code class="language-plaintext highlighter-rouge">fit_line=True</code></td>
